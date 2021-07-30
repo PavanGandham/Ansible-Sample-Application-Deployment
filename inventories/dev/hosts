@@ -1,2 +1,2 @@
 [all]
-10.40.1.94
+10.40.1.94 ansible_user=ec2-user
