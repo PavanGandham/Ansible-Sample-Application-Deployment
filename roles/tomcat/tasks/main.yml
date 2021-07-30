@@ -43,11 +43,11 @@
 
 - name: copy sample css file
   copy: >
-  src=style.css 
-  dest=/opt/apache-tomcat-7.0.61/webapps/samples/style.css
-  owner=root
-  group=root
-  mode=0644
+      src=style.css 
+      dest=/opt/apache-tomcat-7.0.61/webapps/samples/style.css
+      owner=root
+      group=root
+      mode=0644
 
 - name: Install Tomcat init script
   copy: src=tomcat-initscript.sh dest=/etc/init.d/tomcat mode=0755
