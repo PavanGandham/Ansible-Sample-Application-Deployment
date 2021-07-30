@@ -39,7 +39,6 @@
   
 - name: copy sample index.html file
   template: src=index.html.j2 dest=/opt/apache-tomcat-7.0.61/webapps/samples/index.html
-  notify: restart tomcat
 
 - name: copy sample css file
   copy: >
@@ -48,6 +47,13 @@
       owner=root
       group=root
       mode=0644
+- name: copy background image file
+  copy: >
+      src=bg2.jpg
+      dest=/opt/apahe-tomcat-7.0.61/webapps/samples
+      owner=root
+      group=root
+      mode=0600
 
 - name: Install Tomcat init script
   copy: src=tomcat-initscript.sh dest=/etc/init.d/tomcat mode=0755
@@ -57,4 +63,7 @@
 
 - name: wait for tomcat to start
   wait_for: port={{http_port}}
+
+- name: Restart tomcat server
+  notify: restart tomcat
 
