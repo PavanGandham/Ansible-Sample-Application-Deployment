@@ -50,7 +50,7 @@
 - name: copy background image file
   copy: >
       src=bg2.jpg
-      dest=/opt/apahe-tomcat-7.0.61/webapps/samples
+      dest=/opt/apache-tomcat-7.0.61/webapps/samples
       owner=root
       group=root
       mode=0600
