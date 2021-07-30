@@ -54,8 +54,6 @@
       owner=root
       group=root
       mode=0600
-      
-- name: Restarting tomcat server
   notify: 
     - restart tomcat
 
