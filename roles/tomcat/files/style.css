@@ -1,0 +1,66 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: url(bg2.jpg) no-repeat;
+    background-image: radial-gradient(red, yellow);
+    background-size: cover;
+  }
+.wrap{
+    max-width: 350px;
+    border-radius: 20px;
+    margin: auto;
+    background: rgba(0,0,0, 0.8);
+    box-sizing: border-box;
+    padding: 40px;
+    color: #fff;
+    margin-top: 100px;
+}
+h2{
+    text-align: center;
+}
+input[type=text],input[type=password],input[type=email],input[type=tel]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0, 0.10);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: rgba(255, 255, 255, 0.945);
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bolder;
+}
+input[type=submit]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    background: #60adde;
+    opacity: 0.7;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+input[type=submit]:hover{
+    background: #003366;
+    opacity: 0.7;
+}
+div{
+    width: 100%;
+    font-size: small;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0,0,0, 0);
+    outline: none;
+    border: none;
+    border-bottom: 1px dotted #fff;
+    color: rgb(100, 99, 99);
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bolder;
+}
