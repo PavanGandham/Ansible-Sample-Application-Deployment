@@ -4,7 +4,7 @@ body{
     padding: 0;
     font-family: Arial;
     background: url(bg2.jpg) no-repeat;
-    background-image: radial-gradient(red, yellow);
+    /* background-image: radial-gradient(red, yellow); */
     background-size: cover;
   }
 .wrap{
