@@ -1,8 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='main.js'></script>
 </head>
 <body>
-    <h2>{{index_page}}</h2>
+    <div class = "wrap">
+        <h2>{{index_page}}</h2>
+            <input type="text" placeholder="First Name" id="Firstname" name="Firstname" required>
+            <input type="text" placeholder="Last Name" id="Lastname" name="Lastname" required>
+            <input type="email" placeholder="Email" id="Email" name="Email" required>
+            <input type="text" placeholder="User Name" id="Username" name="Username"  required>
+            <input type="password" placeholder="Password" id="Password" name="Password" required>
+            <div class="gender">Gender
+                <input type="radio" name="Gender" id="male" value="M">Male
+                <input type="radio" name="Gender" id="female" value="F">Female
+            </div>
+            <input type="text" placeholder="Address" id="Address" name="Address" required>
+            <input type="tel" placeholder="Contact Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="Number" name="Number" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
