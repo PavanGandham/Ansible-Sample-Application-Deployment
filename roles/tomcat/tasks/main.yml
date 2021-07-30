@@ -54,6 +54,10 @@
       owner=root
       group=root
       mode=0600
+      
+- name: Restarting tomcat server
+  notify: 
+    - restart tomcat
 
 - name: Install Tomcat init script
   copy: src=tomcat-initscript.sh dest=/etc/init.d/tomcat mode=0755
@@ -64,7 +68,4 @@
 - name: wait for tomcat to start
   wait_for: port={{http_port}}
 
-- name: Restart tomcat server
-  notify: 
-    - restart tomcat
 
