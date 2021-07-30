@@ -65,5 +65,6 @@
   wait_for: port={{http_port}}
 
 - name: Restart tomcat server
-  notify: restart tomcat
+  notify: 
+    - restart tomcat
 
