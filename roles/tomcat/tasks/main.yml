@@ -37,8 +37,9 @@
     mode: 0777
   become: true
   
-- name: copy sample index.html file
+- name: copy sample index.html and css file
   template: src=index.html.j2 dest=/opt/apache-tomcat-7.0.61/webapps/samples/index.html
+  template: src=style.css dest=/opt/apache-tomcat-7.0.61/webapps/samples/style.css
 
 
   notify: restart tomcat
