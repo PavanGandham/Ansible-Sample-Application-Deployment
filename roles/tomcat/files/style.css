@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background-image: url(roles\tomcat\files\bg2.jpg);
+    background-image: url(bg2.jpg);
     /* background-image: radial-gradient(red, yellow); */
     background-size: cover;
   }
